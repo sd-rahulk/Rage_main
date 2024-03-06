@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fff;
+  transition: .5s;
+  margin: 0; /* Remove default body margin */
+  background-attachment: fixed;
+}
+
+.nav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .nav_menu {
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 0;
+    width: 90%;
+    top: -100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: .4s;
+    border-radius: 2rem;
+    z-index: 100;
+  }
+}
+
+.nav_list {
+  position: relative;
+  flex: 1;
+  align-items: center;
+  row-gap: 1.5rem;
+  left: 146px;
+}
+
+.nav_link, .nav_logo {
+  color: hsl(45, 4%, 15%);
+  font-weight: 600;
+  text-decoration: none; /* Remove underline */
+  padding: 0.5rem; /* Add padding for spacing */
+  transition: color 0.3s;
+}
+
+.nav_link:hover {
+  color: #30E3CA; /* Change color on hover */
+}
+
+.scroll-header {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 6rem 0 2rem;
+  }
+  .nav {
+    height: calc(3rem + 1.5rem);
+  }
+  .nav_list {
+    flex-direction: row;
+    column-gap: 2.5rem;
+  }
+  .nav_toggle {
+    display: none;
+  }
+}
+
+header {
+  background-color: #fff; /* Change to a more neutral background color */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_item {
+  display: inline;
+  position: static;
+}
+
+.button{
+  display: inline-block;
+  position: relative;
+  background-color: #f6c28f;
+  color: #1A1A1A;
+  padding: .75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  transition: .3s;
+  right: 1338px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #F4CE14;
+  padding-left: 1.5rem; /* Adjust the padding to maintain size */
+  padding-right: 1.5rem; /* Adjust the padding to maintain size */
+  box-shadow: 20px 20px black;
+}
+
+.icons{
+  position: relative;
+  right: -221px;
+  font-size: 33px !important;
+}
+
+.icons1{
+  position: relative;
+  font-size: 33px !important;
+  right: -93px;
+}
+
+.home_container {
+  row-gap: 3rem;
+}
+
+.home_title {
+  font-size: 5rem;
+  position: relative;
+  font-weight: 700;
+  left: 226px;
+}
+
+.home_description {
+  position: relative;
+  left: 226px;
+}
+
+.home_logo{
+  /* box-shadow: 5px 5px black; */
+  /* border-radius: 10px; */
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  /* top: 129px;
+  left: 996px; */
+}
+
+h1{
+  color: #40514E;
+  line-height: 1.5;
+}
+
+.button1{
+  display: inline-block;
+  position: relative;
+  background-color: #f6c28f;
+  color: #1A1A1A;
+  padding: .75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  transition: .3s;
+  left: 223px;
+  text-decoration: none;
+}
+
+.button1:hover{
+  background-color: #F4CE14;
+  padding-left: 1.5rem; /* Adjust the padding to maintain size */
+  padding-right: 1.5rem; /* Adjust the padding to maintain size */
+  box-shadow: 20px 20px black;
+}
+
+.attention-banner {
+  height: 5px;
+  background-color: black;
+  text-align: center;
+  padding: 1rem;
+}
+
+.attention-banner p {
+  color: #ffffff; /* Set the text color to yellow or your preferred color */
+  margin-top: -8px;
+}
+
+.attention-banner a {
+  color: #F4CE14;
+  text-decoration: underline;
+}
+
+.services_container {
+  padding-top: 1rem;
+  width: 200px;
+}
+
+.services_data {
+  display: grid;
+  row-gap: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px hsla(45, 100%, 15%, 0.15);
+  padding: 6rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.services_img {
+  width: 135px;
+  justify-self: center;
+  margin-bottom: .5rem;
+}
+
+.services_data{
+  /* background-image: url("https://images.pexels.com/photos/15491852/pexels-photo-15491852/free-photo-of-gem-on-black-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  background-position:center;
+  background-size: cover;
+  text-align: center;
+}
+
+.section_header{
+  position: relative;
+  left: 996px;
+}
+
+h2{
+  margin-left: 521px;
+  margin-top: 40px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #40514E;
+}
+
+.product{
+  background-image: url("./golf.png");
+  margin-left: 18px;
+  margin-top: 29px;
+  position: relative;
+  width: 409px;
+  height: 294px;
+  transition: all 0.3s ease;
+  top: -41px;
+}
+
+.product2{
+  background-image: url("./card.jpg");
+  margin-left: 532px;
+  margin-top: -520px;
+  position: relative;
+  width: 409px;
+  height: 286px;
+}
+
+.product3{
+  background-image: url("./card2.jpg");
+  margin-left: 1045px;
+  margin-top: -473px;
+  position: relative;
+  width: 409px;
+  height: 286px;
+}
+
+.product2 a{
+  position: relative;
+  margin-left: 6px;
+}
+
+.button2{
+  right: 0px;
+}
+
+.services_subtitle{
+  color: #000;
+  font-weight: 30px;
+  margin-top: 58px;
+}
+
+.f{
+  background-color:pink;
+}
+
+.f:hover{
+  background-color: #ff69b4;
+}
+
+.home_data{
+  position: absolute;
+  top: 400px;
+}
+
+.home_title{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.data{
+  /* color: pink; */
+  display: inline-flex;
+  padding: 4px;
+  font-size: 2rem;
+}
+
+.welcome{
+  text-align: center;
+  justify-content: center;
+}
+
+.nav.container{
+  border-color: black;
+  border-style: dashed;
+  border-radius: 2px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.poojit{
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+.poojit:hover{
+  background-color: pink;
+  transition: e;
+  box-shadow: none;
+}
+
+.footer {
+  background-color: hsl(45, 98%, 80%);
+  padding-bottom: 2rem;
+}
+
+.footer_container {
+  row-gap: 2rem;
+}
+
+.footer_logo, .footer_title {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer_logo {
+  display: inline-block;
+  font-weight: 600;
+  color: hsl(45, 4%, 15%);
+}
+
+.footer_description, .footer_link {
+  font-size: 0.813rem;
+}
+
+.footer_links {
+  display: grid;
+  row-gap: .5rem;
+}
+
+.footer_link {
+  color: hsl(45, 4%, 15%);
+}
+
+.footer_social {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.footer_social-link {
+  font-size: 1.25rem;
+  color: hsl(45, 4%, 15%);
+}
+
+.footer_copy {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: hsl(45, 4%, 35%);
+}
+
+.footer_container {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid1{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.E:hover{
+  position: relative;
+  font-size: 3rem;
+  right: 7px;
+  bottom: 10px;
+  top: 10px;
+  margin: 0;
+  padding: 0;
+  color: pink;
+  transform: scale(2);
+}
+
+.a:hover{
+  padding: 0;
+  margin: 0;
+  /* transition: 0.3s; */
+}
+
+.E{
+  transition: 0.3s;
+}
+
+.a{
+  transition: 0.3s;
+}
